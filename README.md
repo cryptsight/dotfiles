@@ -4,4 +4,6 @@
 - swaybg
 - waybar 
 - nvim
+- alacritty
+- catppuccin mocha theme
 
