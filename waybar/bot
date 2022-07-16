@@ -1,0 +1,61 @@
+{
+    // "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 36, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["custom/btc", "custom/eth", "custom/zilli", "custom/xmr"],
+    "modules-center": ["custom/weather"],
+    "modules-right": ["disk", "disk#games","disk#games_ssd", "network"],
+    "network": {
+        "interface": "enp34s0", // (Optional) To force the use of this interface
+        //"format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}"
+    },
+    "custom/weather": {
+        "interval": 360,
+        "format": {},
+        "exec": "curl https://wttr.in/Frankfurt?format=3",
+    },
+    "custom/btc": {
+        "interval": 360,
+        "format":" {}",
+        "exec": "grep -i btc /home/cryptsight/Programme/cryptovalues",
+    },
+    "custom/eth": {
+        "interval": 360,
+        "format":" {}",
+        "exec": "grep -i eth /home/cryptsight/Programme/cryptovalues",
+    },
+    "custom/zilli": {
+        "interval": 360,
+        "format":" {}",
+        "exec": "grep -i zilli /home/cryptsight/Programme/cryptovalues",
+    },
+    "custom/xmr": {
+        "interval": 360,
+        "format":" {}",
+        "exec": "grep -i xmr /home/cryptsight/Programme/cryptovalues",
+    },
+    "disk": {
+        "format": " {path} {free} left",
+        "path": "/",
+        "interval": 30,
+    },
+    "disk#games": {
+        "format": " {path} {free} left",
+        "path": "/games",
+        "interval": 30,
+    },
+    "disk#games_ssd": {
+        "format": " {path} {free} left",
+        "path": "/games_ssd",
+        "interval": 30,
+    },
+}
+

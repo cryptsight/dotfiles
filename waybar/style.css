@@ -1,0 +1,183 @@
+* {
+    font-family: Roboto, "Font Awesome 6 Free Regular", "Font Awesome 6 Brands Regular", "Font Awesome 6 Free Solid";
+    font-size: 17px;
+    color: #CDD6F4;
+}
+window {
+    background: rgba(40, 42, 54, 0.30);
+    background: #1E1E2E;
+}
+window.bottom{
+    background: rgba(40, 42, 54, 0.30);
+    background: #1E1E2E;
+}
+
+#workspaces {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#workspaces button {
+}
+
+#workspaces button.focused {
+    color: #45475A;
+    background: #F38BA8;
+    border-radius: 25px;
+}
+
+#workspaces button.urgent {
+    color:      rgba(238, 46, 36, 1);
+}
+
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #disk, #custom-btc, #custom-eth, #custom-xmr{
+    margin:     0px 6px 0px 10px;
+    min-width:  25px;
+}
+#clock {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+
+#battery.warning {
+}
+
+#battery.critical {
+}
+
+#battery.charging {
+}
+#pulseaudio {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+#temperature {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+#language {    
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+#custom-btc,#custom-eth,#custom-xmr,#custom-zil{
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#battery.charging, #battery.plugged {
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+
+#battery.critical:not(.charging) {
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+
+#memory {    
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+
+#disk {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+#network {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+}
+#tray {    
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: none;
+    color: #4d4d4d;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
