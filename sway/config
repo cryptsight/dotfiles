@@ -266,7 +266,7 @@ output DP-1 pos 3440 270 res 1920x1080
 ###########
 #WALLPAPER#
 ##########
-output * bg /home/cryptsight/Pictures/Wallpaper/the_faunt-wallpaper-3440x1440.jpg fill
+output * bg /home/cryptsight/Pictures/Wallpaper/5150263.png fill
 #######
 #INPUT#
 #######
