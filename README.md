@@ -1,6 +1,6 @@
 # dotfiles
 
-<img src="repository/assets/unixp0rn.jpg">
+<img src="/assets/unixp0rn.jpg">
 
 - sway
 - swaybg
