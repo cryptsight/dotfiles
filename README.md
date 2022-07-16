@@ -6,6 +6,10 @@
 - swaybg
 - waybar 
 - nvim
+    - nvim-lspconfig
+    - nvim-tree
+    - nvim-treesitter
+    - transparent
 - alacritty
 - catppuccin mocha theme
 
