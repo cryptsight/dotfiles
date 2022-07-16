@@ -281,6 +281,7 @@ input * xkb_numlock enable
 #\STARTUP#
 ##########
 exec_always waybar
+exec_always waybar -c /home/cryptsight/.config/waybar/bot
 exec swaync
 exec dbus-update-activation-environment --all WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec gentoo-pipewire-launcher
