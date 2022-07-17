@@ -2,12 +2,12 @@
     font-family: Roboto, "Font Awesome 6 Free Regular", "Font Awesome 6 Brands Regular", "Font Awesome 6 Free Solid";
     font-size: 17px;
     color: #CDD6F4;
-}
+} 
 window {
     background: rgba(40, 42, 54, 0.30);
     background: #1E1E2E;
-}
-window.bottom{
+} 
+ window.bottom{
     background: rgba(40, 42, 54, 0.30);
     background: #1E1E2E;
 }
@@ -20,12 +20,16 @@ window.bottom{
 }
 
 #workspaces button {
+  font-weight: bolder;
+  margin: 4px;
+  padding: 0px 3px 0px 3px;
+  min-width: 31px;
 }
 
 #workspaces button.focused {
+    font-weight: bolder;
     color: #45475A;
-    background: #F38BA8;
-    border-radius: 25px;
+    box-shadow: inset 0 3px #F38BA8;
 }
 
 #workspaces button.urgent {

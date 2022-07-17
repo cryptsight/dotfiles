@@ -173,17 +173,17 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "disk": {
-        "format": " {path} {free} left",
+        "format": " {path} {free}",
         "path": "/",
         "interval": 30,
     },
     "disk#games": {
-        "format": " {path} {free} left",
+        "format": " {path} {free}",
         "path": "/games",
         "interval": 30,
     },
     "disk#games_ssd": {
-        "format": " {path} {free} left",
+        "format": " {path} {free}",
         "path": "/games_ssd",
         "interval": 30,
     },
