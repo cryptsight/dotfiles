@@ -18,6 +18,7 @@ require('packer').startup(function()
   use 'wbthomason/packer.nvim' -- Package manager
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use 'nvim-treesitter/nvim-treesitter'
+  use {'neoclide/coc.nvim', branch = 'release'}
   use {
   'kyazdani42/nvim-tree.lua',
   requires = {
@@ -25,6 +26,7 @@ require('packer').startup(function()
   },
   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 }
+
 end)
 
 require("nvim-tree").setup()
