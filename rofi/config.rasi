@@ -1,0 +1,9 @@
+configuration {
+  modes: [ run ];
+  combi-modes: [ window, drun, run ];
+}
+ 
+/* Insert theme modifications after this */
+
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
